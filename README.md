@@ -1,6 +1,6 @@
 <!--
   ============================================================
-  JEEVA NANDAN — GitHub Profile README
+  JEEVANANDAN — GitHub Profile README
   ============================================================
   HOW TO USE THIS FILE:
   1. Replace every instance of "Jeeva0128" with your actual
