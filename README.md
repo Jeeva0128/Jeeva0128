@@ -56,7 +56,7 @@
 
 ```yaml
 whoami:
-  name: "Jeeva Nandan"
+  name: "Jeevanandan"
   education: "B.Tech - Information Technology (2023 - 2027)"
   role: "Aspiring Cloud Security Engineer"
   career_path: "Cloud Security Engineer → DevSecOps Engineer → Cloud Security Architect"
