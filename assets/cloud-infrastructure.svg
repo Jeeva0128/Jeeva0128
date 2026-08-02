@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" fill="none">
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -12; }
+    }
+    @keyframes flowRight {
+      0% { transform: translateX(-20px); opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: translateX(20px); opacity: 0; }
+    }
+    @keyframes nodeGlow {
+      0%, 100% { opacity: 0.08; }
+      50% { opacity: 0.18; }
+    }
+    @keyframes dataFlow1 {
+      0% { offset-distance: 0%; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+    @keyframes dataFlow2 {
+      0% { offset-distance: 0%; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+    @keyframes scaleIn {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    .connection-line {
+      stroke: #d0d7de;
+      stroke-width: 1.2;
+      stroke-dasharray: 4 4;
+      animation: dash 1.5s linear infinite;
+    }
+    .connection-line-dark {
+      stroke: #58a6ff;
+      stroke-width: 1;
+      stroke-dasharray: 4 4;
+      opacity: 0.4;
+      animation: dash 2s linear infinite;
+    }
+    .node-glow {
+      animation: nodeGlow 3s ease-in-out infinite;
+    }
+    .cloud-main {
+      animation: float 6s ease-in-out infinite;
+    }
+    .server-pulse {
+      animation: pulse 3s ease-in-out infinite;
+    }
+    .server-pulse-delay {
+      animation: pulse 3s ease-in-out 1s infinite;
+    }
+    .server-pulse-delay2 {
+      animation: pulse 3s ease-in-out 2s infinite;
+    }
+    .data-dot {
+      fill: #58a6ff;
+    }
+    .dot-flow-1 {
+      animation: dataFlow1 3s linear infinite;
+    }
+    .dot-flow-2 {
+      animation: dataFlow1 3s linear 1s infinite;
+    }
+    .dot-flow-3 {
+      animation: dataFlow1 3.5s linear 0.5s infinite;
+    }
+    .dot-flow-4 {
+      animation: dataFlow1 2.8s linear 1.5s infinite;
+    }
+    .dot-flow-5 {
+      animation: dataFlow1 3.2s linear 2s infinite;
+    }
+    .label-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 9px;
+      fill: #8b949e;
+      letter-spacing: 0.5px;
+    }
+    .label-text-primary {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      fill: #58a6ff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  </style>
+
+  <!-- Subtle grid dots -->
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.5" fill="#d0d7de" opacity="0.3"/>
+  </pattern>
+  <rect width="800" height="260" fill="transparent"/>
+  <rect width="800" height="260" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- Connection paths (defined for dot animation) -->
+  <path id="path1" d="M 400 105 L 180 70" fill="none"/>
+  <path id="path2" d="M 400 105 L 620 70" fill="none"/>
+  <path id="path3" d="M 400 135 L 180 190" fill="none"/>
+  <path id="path4" d="M 400 135 L 620 190" fill="none"/>
+  <path id="path5" d="M 400 135 L 400 210" fill="none"/>
+
+  <!-- Connection lines -->
+  <line x1="400" y1="105" x2="180" y2="70" class="connection-line"/>
+  <line x1="400" y1="105" x2="620" y2="70" class="connection-line"/>
+  <line x1="400" y1="135" x2="180" y2="190" class="connection-line"/>
+  <line x1="400" y1="135" x2="620" y2="190" class="connection-line"/>
+  <line x1="400" y1="135" x2="400" y2="210" class="connection-line"/>
+
+  <!-- Secondary connections -->
+  <line x1="180" y1="70" x2="80" y2="120" class="connection-line-dark"/>
+  <line x1="620" y1="70" x2="720" y2="120" class="connection-line-dark"/>
+  <line x1="180" y1="190" x2="80" y2="170" class="connection-line-dark"/>
+  <line x1="620" y1="190" x2="720" y2="170" class="connection-line-dark"/>
+
+  <!-- Data flow dots on main paths -->
+  <circle r="2.5" class="data-dot dot-flow-1">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M 400 105 L 180 70"/>
+  </circle>
+  <circle r="2.5" class="data-dot dot-flow-2">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M 400 105 L 620 70"/>
+  </circle>
+  <circle r="2.5" class="data-dot dot-flow-3">
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M 400 135 L 180 190"/>
+  </circle>
+  <circle r="2.5" class="data-dot dot-flow-4">
+    <animateMotion dur="2.8s" repeatCount="indefinite" path="M 620 190 L 400 135"/>
+  </circle>
+  <circle r="2" class="data-dot dot-flow-5">
+    <animateMotion dur="3.2s" repeatCount="indefinite" path="M 400 135 L 400 210"/>
+  </circle>
+
+  <!-- Secondary flow dots -->
+  <circle r="1.8" class="data-dot dot-flow-3">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M 180 70 L 80 120"/>
+  </circle>
+  <circle r="1.8" class="data-dot dot-flow-4">
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M 620 70 L 720 120"/>
+  </circle>
+
+  <!-- ====== CENTRAL CLOUD NODE ====== -->
+  <g class="cloud-main">
+    <!-- Cloud glow -->
+    <ellipse cx="400" cy="120" rx="55" ry="32" fill="#58a6ff" opacity="0.06" class="node-glow"/>
+    <!-- Cloud shape -->
+    <path d="M 365 135 Q 355 135 350 127 Q 345 119 352 113 Q 350 104 358 98 Q 366 92 376 95 Q 380 86 392 84 Q 404 82 412 88 Q 418 82 428 84 Q 438 86 442 95 Q 450 92 456 98 Q 462 104 460 113 Q 467 119 462 127 Q 457 135 447 135 Z"
+          fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.9"/>
+    <path d="M 365 135 Q 355 135 350 127 Q 345 119 352 113 Q 350 104 358 98 Q 366 92 376 95 Q 380 86 392 84 Q 404 82 412 88 Q 418 82 428 84 Q 438 86 442 95 Q 450 92 456 98 Q 462 104 460 113 Q 467 119 462 127 Q 457 135 447 135 Z"
+          fill="#58a6ff" opacity="0.08"/>
+    <!-- Cloud inner detail -->
+    <line x1="380" y1="108" x2="380" y2="118" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <line x1="395" y1="104" x2="395" y2="122" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <line x1="410" y1="106" x2="410" y2="120" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <line x1="425" y1="108" x2="425" y2="118" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <!-- Upload/download arrows -->
+    <polygon points="395,100 392,104 398,104" fill="#58a6ff" opacity="0.6"/>
+    <polygon points="410,124 407,120 413,120" fill="#58a6ff" opacity="0.6"/>
+    <text x="400" y="148" text-anchor="middle" class="label-text-primary">CLOUD</text>
+  </g>
+
+  <!-- ====== SERVER NODE - TOP LEFT ====== -->
+  <g class="server-pulse">
+    <rect x="156" y="48" width="48" height="38" rx="4" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <rect x="156" y="48" width="48" height="38" rx="4" fill="#8b949e" opacity="0.05"/>
+    <!-- Server rack lines -->
+    <line x1="162" y1="58" x2="198" y2="58" stroke="#8b949e" stroke-width="0.8" opacity="0.5"/>
+    <line x1="162" y1="66" x2="198" y2="66" stroke="#8b949e" stroke-width="0.8" opacity="0.5"/>
+    <line x1="162" y1="74" x2="198" y2="74" stroke="#8b949e" stroke-width="0.8" opacity="0.5"/>
+    <!-- Status dots -->
+    <circle cx="194" cy="54" r="1.5" fill="#3fb950" opacity="0.8"/>
+    <circle cx="194" cy="62" r="1.5" fill="#3fb950" opacity="0.8"/>
+    <circle cx="194" cy="70" r="1.5" fill="#58a6ff" opacity="0.8"/>
+    <text x="180" y="98" text-anchor="middle" class="label-text">EC2</text>
+  </g>
+
+  <!-- ====== DATABASE NODE - TOP RIGHT ====== -->
+  <g class="server-pulse-delay">
+    <ellipse cx="620" cy="56" rx="24" ry="8" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <ellipse cx="620" cy="56" rx="24" ry="8" fill="#8b949e" opacity="0.05"/>
+    <line x1="596" y1="56" x2="596" y2="78" stroke="#8b949e" stroke-width="1.2"/>
+    <line x1="644" y1="56" x2="644" y2="78" stroke="#8b949e" stroke-width="1.2"/>
+    <ellipse cx="620" cy="78" rx="24" ry="8" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <ellipse cx="620" cy="78" rx="24" ry="8" fill="#8b949e" opacity="0.05"/>
+    <ellipse cx="620" cy="67" rx="24" ry="8" fill="none" stroke="#8b949e" stroke-width="0.6" opacity="0.4"/>
+    <text x="620" y="100" text-anchor="middle" class="label-text">RDS</text>
+  </g>
+
+  <!-- ====== CONTAINER NODE - BOTTOM LEFT ====== -->
+  <g class="server-pulse-delay2">
+    <!-- Container box -->
+    <rect x="155" y="170" width="50" height="36" rx="3" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <rect x="155" y="170" width="50" height="36" rx="3" fill="#8b949e" opacity="0.05"/>
+    <!-- Container whale/grid -->
+    <rect x="163" y="178" width="8" height="6" rx="1" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <rect x="175" y="178" width="8" height="6" rx="1" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <rect x="187" y="178" width="8" height="6" rx="1" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <rect x="163" y="188" width="8" height="6" rx="1" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <rect x="175" y="188" width="8" height="6" rx="1" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <rect x="187" y="188" width="8" height="6" rx="1" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <text x="180" y="220" text-anchor="middle" class="label-text">ECS</text>
+  </g>
+
+  <!-- ====== NETWORK/VPC NODE - BOTTOM RIGHT ====== -->
+  <g class="server-pulse">
+    <!-- Shield/VPC shape -->
+    <path d="M 620 172 L 645 180 L 645 200 Q 645 210 620 216 Q 595 210 595 200 L 595 180 Z"
+          fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <path d="M 620 172 L 645 180 L 645 200 Q 645 210 620 216 Q 595 210 595 200 L 595 180 Z"
+          fill="#8b949e" opacity="0.05"/>
+    <!-- Lock icon -->
+    <rect x="614" y="192" width="12" height="10" rx="2" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <path d="M 616 192 L 616 188 Q 616 184 620 184 Q 624 184 624 188 L 624 192"
+          fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <text x="620" y="230" text-anchor="middle" class="label-text">VPC</text>
+  </g>
+
+  <!-- ====== STORAGE NODE - BOTTOM CENTER ====== -->
+  <g class="server-pulse-delay">
+    <!-- S3 bucket shape -->
+    <path d="M 385 210 L 383 240 Q 383 245 400 245 Q 417 245 417 240 L 415 210 Q 415 206 400 206 Q 385 206 385 210 Z"
+          fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <path d="M 385 210 L 383 240 Q 383 245 400 245 Q 417 245 417 240 L 415 210 Q 415 206 400 206 Q 385 206 385 210 Z"
+          fill="#8b949e" opacity="0.05"/>
+    <ellipse cx="400" cy="210" rx="15" ry="4" fill="none" stroke="#8b949e" stroke-width="0.8" opacity="0.5"/>
+    <ellipse cx="400" cy="220" rx="15.5" ry="4" fill="none" stroke="#8b949e" stroke-width="0.5" opacity="0.3"/>
+    <text x="400" y="258" text-anchor="middle" class="label-text">S3</text>
+  </g>
+
+  <!-- ====== EDGE NODES ====== -->
+  <!-- Left edge - Lambda -->
+  <g class="server-pulse-delay2">
+    <rect x="56" y="104" width="36" height="28" rx="3" fill="none" stroke="#8b949e" stroke-width="1"/>
+    <rect x="56" y="104" width="36" height="28" rx="3" fill="#8b949e" opacity="0.04"/>
+    <text x="74" y="121" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#58a6ff" opacity="0.7">λ</text>
+    <text x="74" y="146" text-anchor="middle" class="label-text">Lambda</text>
+  </g>
+
+  <!-- Right edge - CDN -->
+  <g class="server-pulse-delay">
+    <circle cx="730" cy="120" r="16" fill="none" stroke="#8b949e" stroke-width="1"/>
+    <circle cx="730" cy="120" r="16" fill="#8b949e" opacity="0.04"/>
+    <!-- Globe lines -->
+    <ellipse cx="730" cy="120" rx="16" ry="8" fill="none" stroke="#8b949e" stroke-width="0.5" opacity="0.4"/>
+    <ellipse cx="730" cy="120" rx="8" ry="16" fill="none" stroke="#8b949e" stroke-width="0.5" opacity="0.4"/>
+    <line x1="714" y1="120" x2="746" y2="120" stroke="#8b949e" stroke-width="0.5" opacity="0.4"/>
+    <text x="730" y="148" text-anchor="middle" class="label-text">CDN</text>
+  </g>
+
+  <!-- Left bottom edge node -->
+  <g class="server-pulse">
+    <rect x="56" y="158" width="36" height="28" rx="3" fill="none" stroke="#8b949e" stroke-width="1"/>
+    <rect x="56" y="158" width="36" height="28" rx="3" fill="#8b949e" opacity="0.04"/>
+    <!-- IAM key icon -->
+    <circle cx="70" cy="170" r="3" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="73" y1="170" x2="82" y2="170" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="80" y1="168" x2="80" y2="172" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <text x="74" y="200" text-anchor="middle" class="label-text">IAM</text>
+  </g>
+
+  <!-- Right bottom edge node -->
+  <g class="server-pulse-delay2">
+    <rect x="712" y="158" width="36" height="28" rx="3" fill="none" stroke="#8b949e" stroke-width="1"/>
+    <rect x="712" y="158" width="36" height="28" rx="3" fill="#8b949e" opacity="0.04"/>
+    <!-- Monitor icon -->
+    <rect x="722" y="164" width="14" height="10" rx="1" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="729" y1="174" x2="729" y2="178" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="725" y1="178" x2="733" y2="178" stroke="#58a6ff" stroke-width="0.8" opacity="0.6"/>
+    <text x="730" y="200" text-anchor="middle" class="label-text">CW</text>
+  </g>
+
+</svg>
