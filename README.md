@@ -46,8 +46,8 @@ B.Tech Information Technology student specializing in Cloud Engineering, with a 
  
 <br/>
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=jeeva0128&show_icons=true&hide_border=true&theme=default&title_color=2563EB&icon_color=2563EB&text_color=334155" width="48%" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeeva0128&layout=compact&hide_border=true&title_color=2563EB&text_color=334155" width="48%" alt="Top Languages" />
+<img src="https://github-readme-stats-fast.vercel.app/api?username=jeeva0128&show_icons=true&hide_border=true&theme=default&title_color=2563EB&icon_color=2563EB&text_color=334155" width="48%" alt="GitHub Stats" />
+<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=jeeva0128&layout=compact&hide_border=true&title_color=2563EB&text_color=334155" width="48%" alt="Top Languages" />
 <img src="https://streak-stats.demolab.com?user=jeeva0128&hide_border=true&background=FFFFFF&ring=2563EB&fire=2563EB&currStreakLabel=2563EB" width="70%" alt="GitHub Streak" />
 </div>
 <br/>
