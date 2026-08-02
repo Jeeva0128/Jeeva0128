@@ -79,20 +79,6 @@ B.Tech Information Technology student focused on Cloud Engineering. I work with 
 
 ---
 
-### GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=jeeva0128&show_icons=true&hide_border=true&bg_color=00000000&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff" height="160" alt="GitHub Stats"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeeva0128&layout=compact&hide_border=true&bg_color=00000000&title_color=58a6ff&text_color=8b949e" height="160" alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=jeeva0128&hide_border=true&background=00000000&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=8b949e&sideNums=8b949e&dates=8b949e" alt="GitHub Streak"/>
-</p>
-
----
-
 ### Connect
 
 <p align="center">
