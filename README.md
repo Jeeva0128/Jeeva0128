@@ -43,13 +43,7 @@ B.Tech Information Technology student specializing in Cloud Engineering, with a 
 | **Resume Analyzer** | Tool that parses resumes and surfaces actionable, structured improvement suggestions. | [Repository](https://github.com/jeeva0128/resume-analyzer) · [Live Demo](#) |
 | **Future Cloud Projects** | Reserved space for upcoming AWS and Infrastructure-as-Code builds as I progress. | [Repository](https://github.com/jeeva0128/cloud-projects) · [Live Demo](#) |
  
-<br/>
-<div align="center">
-<img src="https://github-readme-stats-fast.vercel.app/api?username=jeeva0128&show_icons=true&hide_border=true&theme=default&title_color=2563EB&icon_color=2563EB&text_color=334155" width="48%" alt="GitHub Stats" />
-<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=jeeva0128&layout=compact&hide_border=true&title_color=2563EB&text_color=334155" width="48%" alt="Top Languages" />
-<img src="https://streak-stats.demolab.com?user=jeeva0128&hide_border=true&background=FFFFFF&ring=2563EB&fire=2563EB&currStreakLabel=2563EB" width="70%" alt="GitHub Streak" />
-</div>
-<br/>
+
 <div align="center">
   <a href="https://github.com/jeeva0128"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://linkedin.com/in/jeevanandan-cloud"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
