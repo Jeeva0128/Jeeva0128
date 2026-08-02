@@ -52,20 +52,21 @@ B.Tech Information Technology student specializing in Cloud Engineering, with a 
 </div>
 <br/>
 <div align="center">
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jeeva0128)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jeevanandan-cloud)
-[![Portfolio](https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=vercel&logoColor=white)](https://jeevanandan.me)
-[![Email](https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white)](mailto:jeevanandan5451@gmail.com)
-[![Website](https://img.shields.io/badge/Website-2563EB?style=flat-square&logo=googlechrome&logoColor=white)](https://jeevanandan.me)
+  <a href="https://github.com/jeeva0128"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://linkedin.com/in/jeevanandan-cloud"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://jeevanandan.me"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="mailto:jeevanandan5451@gmail.com"><img src="https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://jeevanandan.me"><img src="https://img.shields.io/badge/Website-2563EB?style=flat-square&logo=googlechrome&logoColor=white" alt="Website" /></a>
  
-<br/>
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Open Source](https://img.shields.io/badge/Open%20Source-3DA639?style=flat-square&logo=opensourceinitiative&logoColor=white)
-![Cloud Engineering](https://img.shields.io/badge/Cloud%20Engineering-2563EB?style=flat-square&logo=icloud&logoColor=white)
- 
+  <br/>
+  <br/>
+
+  <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
+  <img src="https://img.shields.io/badge/Open%20Source-3DA639?style=flat-square&logo=opensourceinitiative&logoColor=white" alt="Open Source" />
+  <img src="https://img.shields.io/badge/Cloud%20Engineering-2563EB?style=flat-square&logo=icloud&logoColor=white" alt="Cloud Engineering" />
 </div>
 <br/>
 <div align="center">
