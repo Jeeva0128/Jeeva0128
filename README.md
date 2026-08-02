@@ -40,24 +40,23 @@ B.Tech Information Technology student specializing in Cloud Engineering, with a 
  
 | Project | Description | Links |
 |---|---|---|
-| **Portfolio Website** | Personal portfolio showcasing my background, skills, and cloud engineering journey. | [Repository](YOUR_REPO_LINK) · [Live Demo](YOUR_LIVE_DEMO_LINK) |
-| **Resume Analyzer** | Tool that parses resumes and surfaces actionable, structured improvement suggestions. | [Repository](YOUR_REPO_LINK) · [Live Demo](YOUR_LIVE_DEMO_LINK) |
-| **Future Cloud Projects** | Reserved space for upcoming AWS and Infrastructure-as-Code builds as I progress. | [Repository](YOUR_REPO_LINK) · [Live Demo](YOUR_LIVE_DEMO_LINK) |
+| **Portfolio Website** | Personal portfolio showcasing my background, skills, and cloud engineering journey. | [Repository](https://github.com/jeeva0128/portfolio) · [Live Demo](https://jeevanandan.me) |
+| **Resume Analyzer** | Tool that parses resumes and surfaces actionable, structured improvement suggestions. | [Repository](https://github.com/jeeva0128/resume-analyzer) · [Live Demo](#) |
+| **Future Cloud Projects** | Reserved space for upcoming AWS and Infrastructure-as-Code builds as I progress. | [Repository](https://github.com/jeeva0128/cloud-projects) · [Live Demo](#) |
  
 <br/>
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&theme=default&title_color=2563EB&icon_color=2563EB&text_color=334155" width="48%" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&title_color=2563EB&text_color=334155" width="48%" alt="Top Languages" />
-<img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&hide_border=true&background=FFFFFF&ring=2563EB&fire=2563EB&currStreakLabel=2563EB" width="70%" alt="GitHub Streak" />
+<img src="https://github-readme-stats.vercel.app/api?username=jeeva0128&show_icons=true&hide_border=true&theme=default&title_color=2563EB&icon_color=2563EB&text_color=334155" width="48%" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeeva0128&layout=compact&hide_border=true&title_color=2563EB&text_color=334155" width="48%" alt="Top Languages" />
+<img src="https://streak-stats.demolab.com?user=jeeva0128&hide_border=true&background=FFFFFF&ring=2563EB&fire=2563EB&currStreakLabel=2563EB" width="70%" alt="GitHub Streak" />
 </div>
 <br/>
 <div align="center">
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/YOUR_GITHUB_USERNAME)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN_USERNAME)
-[![Portfolio](https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=vercel&logoColor=white)](https://YOUR_PORTFOLIO_URL)
-[![Email](https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL)
-[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/YOUR_X_USERNAME)
-[![Website](https://img.shields.io/badge/Website-2563EB?style=flat-square&logo=googlechrome&logoColor=white)](https://YOUR_DOMAIN)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jeeva0128)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jeevanandan-cloud)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=vercel&logoColor=white)](https://jeevanandan.me)
+[![Email](https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white)](mailto:jeevanandan5451@gmail.com)
+[![Website](https://img.shields.io/badge/Website-2563EB?style=flat-square&logo=googlechrome&logoColor=white)](https://jeevanandan.me)
  
 <br/>
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
@@ -73,4 +72,3 @@ B.Tech Information Technology student specializing in Cloud Engineering, with a 
 *Always learning. Always building. Always improving.*
  
 </div>
- 

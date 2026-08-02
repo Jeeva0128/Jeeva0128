@@ -1,0 +1,105 @@
+<svg viewBox="0 0 1000 232" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Animated cloud infrastructure diagram">
+  <defs>
+    <style>
+      .node-stroke   { stroke: #2563EB; stroke-width: 2.5; fill: #FFFFFF; }
+      .node-stroke-d { stroke: #2563EB; stroke-width: 2.5; fill: none; }
+      .slat          { stroke: #93C5FD; stroke-width: 2; stroke-linecap: round; }
+      .link          { stroke: #93C5FD; stroke-width: 2; fill: none; stroke-linecap: round; }
+      .label         { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 13px; fill: #64748B; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- boundary (subtle "environment" frame) -->
+  <rect x="20" y="14" width="960" height="204" rx="16"
+        fill="none" stroke="#BFDBFE" stroke-width="1.25"
+        stroke-dasharray="4 6" opacity="0.55"/>
+
+  <!-- connection paths (also used as animateMotion guides) -->
+  <path id="p1" class="link" d="M78,90 L360,90"/>
+  <path id="p2" class="link" d="M640,90 L922,90"/>
+  <path id="p3" class="link" d="M420,132 Q362,150 300,159"/>
+  <path id="p4" class="link" d="M580,132 Q638,150 700,159"/>
+
+  <!-- animated dash flow on each link -->
+  <g>
+    <path class="link" d="M78,90 L360,90" stroke-dasharray="5 7">
+      <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path class="link" d="M640,90 L922,90" stroke-dasharray="5 7">
+      <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path class="link" d="M420,132 Q362,150 300,159" stroke-dasharray="5 7">
+      <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.9s" repeatCount="indefinite"/>
+    </path>
+    <path class="link" d="M580,132 Q638,150 700,159" stroke-dasharray="5 7">
+      <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- data packets travelling along the links -->
+  <circle r="4" fill="#2563EB">
+    <animateMotion dur="2.4s" begin="0s" repeatCount="indefinite">
+      <mpath href="#p1" xlink:href="#p1"/>
+    </animateMotion>
+  </circle>
+  <circle r="4" fill="#2563EB">
+    <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite">
+      <mpath href="#p2" xlink:href="#p2"/>
+    </animateMotion>
+  </circle>
+  <circle r="3.5" fill="#60A5FA">
+    <animateMotion dur="2.1s" begin="0.5s" repeatCount="indefinite">
+      <mpath href="#p3" xlink:href="#p3"/>
+    </animateMotion>
+  </circle>
+  <circle r="3.5" fill="#60A5FA">
+    <animateMotion dur="2.1s" begin="1.4s" repeatCount="indefinite">
+      <mpath href="#p4" xlink:href="#p4"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Client node -->
+  <circle cx="60" cy="90" r="14" class="node-stroke"/>
+  <circle cx="60" cy="90" r="14" fill="none" stroke="#93C5FD" stroke-width="2">
+    <animate attributeName="r" values="14;24;14" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="60" y="122" class="label">Client</text>
+
+  <!-- Cloud shape -->
+  <path class="node-stroke-d" stroke-linejoin="round" stroke-linecap="round" d="
+    M400,132
+    C378,132 362,116 362,97
+    C362,78 378,64 398,64
+    C403,42 426,26 453,26
+    C480,26 502,39 510,60
+    C531,47 559,53 570,74
+    C586,80 596,96 590,113
+    C587,127 573,132 557,132
+    Z"/>
+  <circle cx="480" cy="80" r="5" fill="#2563EB">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Database node (cylinder) -->
+  <g class="node-stroke-d">
+    <ellipse cx="940" cy="78" rx="20" ry="8"/>
+    <path d="M920,78 L920,102 C920,106.4 929,110 940,110 C951,110 960,106.4 960,102 L960,78"/>
+    <path d="M920,90 C920,94.4 929,98 940,98 C951,98 960,94.4 960,90" fill="none"/>
+  </g>
+  <text x="940" y="132" class="label">Database</text>
+
+  <!-- Compute node (container) -->
+  <rect x="282" y="159" width="36" height="36" rx="6" class="node-stroke"/>
+  <line x1="288" y1="170" x2="312" y2="170" class="slat"/>
+  <line x1="288" y1="178" x2="312" y2="178" class="slat"/>
+  <line x1="288" y1="186" x2="312" y2="186" class="slat"/>
+  <text x="300" y="210" class="label">Compute</text>
+
+  <!-- Storage node -->
+  <rect x="682" y="159" width="36" height="36" rx="6" class="node-stroke"/>
+  <line x1="688" y1="170" x2="712" y2="170" class="slat"/>
+  <line x1="688" y1="178" x2="712" y2="178" class="slat"/>
+  <line x1="688" y1="186" x2="712" y2="186" class="slat"/>
+  <text x="700" y="210" class="label">Storage</text>
+</svg>
