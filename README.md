@@ -1,6 +1,5 @@
-<div align="center">
-# Jeevanandan K
- 
+<h1 align="center">Jeevanandan K</h1>
+<div align="center"> 
 **Cloud Engineering Student • Linux • AWS • DevOps • Automation**
  
 Building secure, scalable cloud infrastructure while continuously learning modern cloud technologies.
