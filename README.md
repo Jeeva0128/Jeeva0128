@@ -1,9 +1,9 @@
-<h1 align="center">Jeevanandan K</h1>
-<div align="center"> 
-**Cloud Engineering Student • Linux • AWS • DevOps • Automation**
- 
-Building secure, scalable cloud infrastructure while continuously learning modern cloud technologies.
- 
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=36&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&lines=Jeevanandan+K)](https://github.com/Jeeva0128)
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=18&duration=2200&pause=700&color=94A3B8&center=true&vCenter=true&width=750&lines=Cloud+Engineering+Student;Linux+%7C+AWS+%7C+DevOps+%7C+Automation;Building+Secure%2C+Scalable+Cloud+Infrastructure;Always+Learning.+Always+Building.)](https://github.com/Jeeva0128)
+
 <br/>
 <img src="./assets/cloud-animation.svg" width="100%" alt="Cloud infrastructure animation" />
 </div>
